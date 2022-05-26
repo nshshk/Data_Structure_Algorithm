@@ -68,8 +68,14 @@ aclocal.m4
 */Makefile
 */.deps/
 */.gdb_history
+compile
+depcomp
+install-sh
+missing 
 remake
 
 *.jpg
 
 tags
+
+
