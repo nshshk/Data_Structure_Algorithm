@@ -1,0 +1,17 @@
+digraph G
+{
+    shape = none
+        label = <<table border="0" cellspacing="0">
+        <tr>
+        <td port="port0" width="50" height="50" border="1" bgcolor="lightgray">3</td>
+        <td port="port2" width="50" height="50" border="1" bgcolor="lightgray">2</td>
+        <td port="port3" width="50" height="50" border="1" bgcolor="lightgray">5</td>
+        <td port="port4" width="50" height="50" border="1" bgcolor="lightgray">1</td>
+        <td port="port1" width="50" height="50" border="1" bgcolor="lightgray">7</td>
+        <td port="port6" width="50" height="50" border="1" bgcolor="lightgray">6</td>
+        <td port="port7" width="50" height="50" border="1" bgcolor="lightpink">4</td>
+        <td port="port5" width="50" height="50" border="1" bgcolor="lightpink">8</td>
+        </tr>
+        </table>>
+}
+

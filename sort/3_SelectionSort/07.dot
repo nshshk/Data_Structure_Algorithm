@@ -1,0 +1,26 @@
+digraph G
+{
+    node1
+        [
+        shape = none
+            label = <<table border="0" cellspacing="0">
+            <tr>
+            <td port="port0" width="50" height="50" bgcolor="lightgray" border="1">3</td>
+            <td port="port7" width="50" height="50" bgcolor="lightpink" border="1">4</td>
+            <td port="port2" width="50" height="50" bgcolor="lightgray" border="1">2</td>
+            <td port="port3" width="50" height="50" bgcolor="lightgray" border="1">5</td>
+            <td port="port4" width="50" height="50" bgcolor="lightgray" border="1">1</td>
+            <td port="port6" width="50" height="50" bgcolor="lightpink" border="1">6</td>
+            <td port="port1" width="50" height="50" border="1">7</td>
+            <td port="port5" width="50" height="50" border="1">8</td>
+            </tr>
+            </table>>
+        ]
+    node2
+    [
+        shape = none
+        label = <<table border="0" cellspacing="0">
+                    <tr><td port="data" style="dotted" width="50" height="50" bgcolor="lightgray" border="1"> max_idx = 1 </td></tr>
+                </table>>
+    ]
+}
