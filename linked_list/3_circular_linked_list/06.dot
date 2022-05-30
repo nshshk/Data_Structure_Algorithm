@@ -1,0 +1,12 @@
+digraph single_linked_list {
+        rankdir=LR;
+        node [shape=record];
+        tail [label="{ circular_tail | <next>  }"]
+        a [label="{ 3 | <next>  }"]
+        b [label="{ 7 | <next>  }"]
+        c [label="{ 9 | <next>  }"]
+        a:next -> b[arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+        tail -> a[arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+        b:next -> a[arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+}
+

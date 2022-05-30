@@ -1,0 +1,10 @@
+digraph single_linked_list {
+        rankdir=LR;
+        node [shape=record];
+        head [label="{ single_head | <ref>  }"]
+        a [label="{ 3 | <ref>  }"]
+        null [shape=none, label="null"];
+        head:ref:c -> a[arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+        a:ref:c -> null   [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+}
+

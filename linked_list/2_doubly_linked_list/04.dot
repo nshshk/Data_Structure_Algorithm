@@ -1,0 +1,13 @@
+digraph single_linked_list {
+        rankdir=LR;
+        node [shape=record];
+        head [label="{ <prev> | doubly_head | <next>  }"]
+        a [label="{ <prev> | 3 | <next>  }"]
+        b [label="{ <prev> | 7 | <next>  }"]
+        null [shape=none, label="null"];
+        //null2 [shape=none, label="null"];
+        head:next -> a [arrowhead=vee, tailclip=false];
+        a:next -> null [arrowhead=vee, tailclip=false];
+        a:prev-> head[arrowhead=vee, tailclip=false];
+}
+

@@ -1,0 +1,18 @@
+digraph single_linked_list {
+        rankdir=LR;
+        node [shape=record];
+        head [label="{ head | <ref>  }"]
+        a [label="{ 3 | <ref>  }"]
+        b [label="{ 7 | <ref>  }"]
+        c [label="{ 9 | <ref>  }"]
+        d [label="{ 20 | <ref>  }"]
+        temp_node [label="{ | <ref>  }"]
+        null [shape=none, label="null"];
+        head:ref:c -> c[arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+        a:ref:c -> d[arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+        b:ref:c -> a[arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+        c:ref:c -> b[arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+        temp_node -> a[arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+        d:ref:c -> null[arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+}
+
