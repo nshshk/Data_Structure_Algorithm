@@ -7,7 +7,7 @@ digraph single_linked_list {
         c [label="{ <prev> | 9 | <next>  }"]
         d [label="{ <prev> | 20 | <next>  }"]
         e [label="{ <prev> | 10 | <next>  }"]
-        temp_node [label="{ <prev> | 20 | <next>  }"]
+        temp_node [label="{ <prev> | | <next>  }"]
         null [shape=none, label="null"];
         head:next -> c [arrowhead=vee, tailclip=false];
         c:next -> b[arrowhead=vee, tailclip=false];
