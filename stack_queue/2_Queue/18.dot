@@ -1,0 +1,22 @@
+digraph queue {
+        rankdir=LR;
+        node [shape=record];
+        head [label="{ queue_head | <next>  }"]
+        tail [label="{ queue_tail | <next>  }"]
+        del_node [label="{ | <next>  }"]
+        //null [shape=none, label="null"];
+        //null2 [shape=none, label="null"];
+        a[label="{ 3 | <next>  }"]
+        b[label="{ 7 | <next>  }"]
+        c[label="{ 9 | <next>  }"]
+        d[label="{ 20 | <next>  }"]
+        e[label="{ 10 | <next>  }"]
+        head -> b [arrowtail=vee,  tailclip=false];
+        tail -> e [arrowtail=vee,  tailclip=false];
+        a:next -> b [arrowtail=vee,  tailclip=false];
+        b:next -> c [arrowtail=vee,  tailclip=false];
+        c:next -> d [arrowtail=vee,  tailclip=false];
+        d:next -> e [arrowtail=vee,  tailclip=false];
+        del_node -> a[arrowtail=vee,  tailclip=false];
+}
+

@@ -1,0 +1,9 @@
+digraph circular_linked_list {
+        rankdir=LR;
+        node [shape=record];
+        head [label="{ stack_head | <next>  }"]
+        del_node [label="{ | <next>  }"]
+        null [shape=none, label="null"];
+        head:next -> null [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+}
+
