@@ -1,0 +1,25 @@
+digraph tree
+{
+    shape = none
+        label = <<table border="0" cellspacing="0">
+        <tr>
+        <td port="arr0" width="40" height="40" bgcolor="lightblue" border="1">6</td>
+        <td port="arr1" width="40" height="40" bgcolor="lightgray" border="1">4</td>
+        <td port="arr2" width="40" height="40" bgcolor="lightgray" border="1">5</td>
+        <td port="arr3" width="40" height="40" bgcolor="lightgray" border="1">8</td>
+        <td port="arr4" width="40" height="40" bgcolor="lightgray" border="1">1</td>
+        <td port="arr5" width="40" height="40" bgcolor="lightgray" border="1">2</td>
+        <td port="arr6" width="40" height="40" bgcolor="lightgray" border="1">9</td>
+        <td port="arr7" width="40" height="40" bgcolor="lightgray" border="1">7</td>
+        <td port="arr8" width="40" height="40" bgcolor="lightgray" border="1">3</td>
+        <td port="arr9" width="40" height="40" bgcolor="lightgray" border="1">10</td>
+        </tr>
+        </table>>
+
+    node [shape=record];
+    arr0 [label = "<l> | <v> 6 | <r>"];
+    //arr1 [label = "<l> | <v> 4 | <r>"];
+    edge[style=invis]
+    //arr0:l -> arr1
+    edge[style=""]
+}

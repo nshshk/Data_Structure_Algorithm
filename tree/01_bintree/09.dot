@@ -1,0 +1,33 @@
+digraph tree
+{
+    shape = none
+        label = <<table border="0" cellspacing="0">
+        <tr>
+        <td port="arr0" width="40" height="40" bgcolor="lightblue" border="1">6</td>
+        <td port="arr1" width="40" height="40" bgcolor="lightblue" border="1">4</td>
+        <td port="arr2" width="40" height="40" bgcolor="lightgray" border="1">5</td>
+        <td port="arr3" width="40" height="40" bgcolor="lightblue" border="1">8</td>
+        <td port="arr4" width="40" height="40" bgcolor="lightpink" border="1">1</td>
+        <td port="arr5" width="40" height="40" bgcolor="lightgray" border="1">2</td>
+        <td port="arr6" width="40" height="40" bgcolor="lightgray" border="1">9</td>
+        <td port="arr7" width="40" height="40" bgcolor="lightblue" border="1">7</td>
+        <td port="arr8" width="40" height="40" bgcolor="lightpink" border="1">3</td>
+        <td port="arr9" width="40" height="40" bgcolor="lightgray" border="1">10</td>
+        </tr>
+        </table>>
+
+    node [shape=record];
+    arr0 [label = "<l> | <v> 6 | <r>"];
+    arr1 [label = "<l> | <v> 4 | <r>"];
+    arr3 [label = "<l> | <v> 8 | <r>"];
+    arr7 [label = "<l> | <v> 7 | <r>"];
+    arr8 [label = "<l> | <v> 3 | <r>"];
+    arr4 [label = "<l> | <v> 1 | <r>"];
+    edge[style=invis]
+    arr0:l -> arr1
+    arr1:r -> arr4
+    edge[style=""]
+    arr3:l -> arr7
+    arr3:r -> arr8
+    arr1:l -> arr3
+}
