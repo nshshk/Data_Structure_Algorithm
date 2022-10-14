@@ -7,15 +7,16 @@ void SelectionSort(int arr[], int size)
 
     for(i = 0; i < size - 1; i ++)
     {
-        for(j = 0; j < size - 2 - i; j++)
+        max_idx = 0;
+        for(j = 1; j < size - 1 - i; j++)
         {
-            if(arr[j+1] > arr[j])
+            if(arr[j] > arr[max_idx])
             {
-                max_idx = j + 1;
+                max_idx = j;
             }
         }
-        temp = arr[j];
-        arr[j] = arr[max_idx];
+        temp = arr[size-1-i];
+        arr[size-1-i] = arr[max_idx];
         arr[max_idx] = temp;
     }
 }
